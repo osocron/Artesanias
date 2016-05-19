@@ -6,11 +6,9 @@
  * Time: 10:07 AM
  */
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     
-    var_dump($_POST);
-    
-    $idArtesano = $_POST['codigo'];
+    $idArtesano = $_GET['codigo'];
 
 
     $connection = mysqli_connect("127.0.0.1", "artesanias", "artesanias", "artesanias");
