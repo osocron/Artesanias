@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: osocron
- * Date: 5/19/16
- * Time: 10:07 AM
- */
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     
