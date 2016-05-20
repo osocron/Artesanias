@@ -4,7 +4,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     
     $idArtesano = $_GET['codigo'];
 
-
     $connection = mysqli_connect("127.0.0.1", "artesanias", "artesanias", "artesanias");
 
     if (!$connection) {
