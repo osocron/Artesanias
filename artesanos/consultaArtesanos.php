@@ -70,7 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         </table>
     </div>
     <div id="buttons">
-        <button type="button">Eliminar</button>
+        <a href="seleccionEliminar.php"><button type="button">Eliminar</button></a>
         <button type="button">Editar</button>
         <a href="agregar.php"><button type="button">Agregar</button></a>
     </div>

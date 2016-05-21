@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
     <title>Página artesanos</title>
@@ -20,8 +19,9 @@
     </ul>
 </div>
 <div id="search">
-    <form action="consultaArtesanos.php" method="get">
-        <input type="search" name="codigo"> <input type="submit" value="Buscar">
+    <form action="editarArtesano.php" method="get">
+        <label>Escribe la ID del artesano a editar</label>
+        <input type="search" name="id"> <input type="submit" value="Editar">
     </form>
 </div>
 <div id="table">
@@ -63,11 +63,6 @@
         $connection->close();
         ?>
     </table>
-</div>
-<div id="buttons">
-    <a href="seleccionEliminar.php"><button type="button">Eliminar</button></a>
-    <a href="seleccionEditar.php"><button type="button">Editar</button></a>
-    <a href="agregar.php"><button type="button">Agregar</button></a>
 </div>
 <div id="footer">
     Este es el footer
