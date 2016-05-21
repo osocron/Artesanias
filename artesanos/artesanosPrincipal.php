@@ -10,15 +10,19 @@
 	<div id="header">
 	    Este es el header
 	</div>
-	<div id="nav">
-	    <ul>
-		<li><a href="#Artesanias">Artesanias</a></li>
-		<li><a href="artesanosPrincipal.php">Artesanos</a>
-		    <ul>
-		        <li><a href="#ReporteArtesanos">ReporteArtesanos</a></li>
+	<div class="navbar navbar-inverse">
+	    <div class="container-fluid">
+		    <ul class="nav navbar-nav">
+			<li><a href="#Artesanias">Artesanias</a></li>
+			<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" 				href="artesanosPrincipal.php">Artesanos
+			<span class="caret"></span></a>
+			    <ul class="dropdown-menu">
+				<li><a href="#ReporteArtesanos">ReporteArtesanos</a></li>
+			    </ul>
+			</li>
 		    </ul>
-		</li>
-	    </ul>
+	    </div>
 	</div>
 	<div id="search">
 	    <form action="consultaArtesanos.php" method="get">
@@ -65,10 +69,10 @@
 		?>
 	    </table>
 	</div>
-	<div id="buttons">
-		<a href="seleccionEliminar.php"><button type="button">Eliminar</button></a>
-		<a href="seleccionEditar.php"><button type="button">Editar</button></a>
-	    <a href="agregar.php"><button type="button">Agregar</button></a>
+	<div class="text-center">
+		<a href="seleccionEliminar.php"><button class="btn btn-danger"type="button">Eliminar</button></a>
+		<a href="seleccionEditar.php"><button class="btn btn-primary"type="button">Editar</button></a>
+	    <a href="agregar.php"><button class="btn btn-success" type="button">Agregar</button></a>
 	</div>
 	<div id="footer">
 	    Este es el footer
