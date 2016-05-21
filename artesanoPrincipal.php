@@ -42,7 +42,7 @@
 
 	    $query = "SELECT * FROM artesano";
 	    ?>
-	    <table class="table table-hover">
+	    <table>
 		<tr>
 		    <th>ID</th>
 		    <th>NOMBRE</th>
@@ -70,14 +70,14 @@
 	    </table>
 	</div>
 	<div class="text-center">
-		<a href="seleccionEliminar.php"><button class="btn btn-danger"type="button">Eliminar</button></a>
-		<a href="seleccionEditar.php"><button class="btn btn-primary"type="button">Editar</button></a>
-	    <a href="agregar.php"><button class="btn btn-success" type="button">Agregar</button></a>
+	    <button class="btn btn-danger"type="button">Eliminar</button>
+	    <button class="btn btn-primary"type="button">Editar</button>
+	    <a href="agregar.php"><button class="btn btn-success"type="button">Agregar</button></a>
 	</div>
 	<div id="footer">
 	    Este es el footer
 	</div>
-</div>
+</div>	
 </body>
 
 </html>
