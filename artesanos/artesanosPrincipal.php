@@ -135,8 +135,8 @@
     </table>
 </div>
 <div id="buttons">
-    <button type="button">Eliminar</button>
-    <button type="button">Editar</button>
+    <a href="seleccionEliminar.php"><button type="button">Eliminar</button></a>
+    <a href="seleccionEditar.php"><button type="button">Editar</button></a>
     <a href="agregar.php"><button type="button">Agregar</button></a>
 </div>
 <div id="footer">

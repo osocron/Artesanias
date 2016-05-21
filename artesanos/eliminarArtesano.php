@@ -1,8 +1,8 @@
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-    
-    $idArtesano = $_GET['codigo'];
+
+    $idArtesano = $_GET['id'];
 
     $connection = mysqli_connect("127.0.0.1", "artesanias", "artesanias", "artesanias");
 
@@ -13,24 +13,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         exit;
     }
 
-    $query = "SELECT * FROM artesano WHERE idArtesano={$idArtesano}";
+    $query = "DELETE FROM artesano WHERE idArtesano='{$idArtesano}'";
 
-    if ($result = $connection->query($query)) {
-
-        /* fetch object array */
-        while ($row = $result->fetch_assoc()) {
-            echo $row["nombre"];
-            echo "\n";
-            echo $row["bio"];
-        }
-
-        /* free result set */
-        $result->free();
+    if ($connection->query($query) === TRUE) {
+        header("Location: artesanosPrincipal.php");
     }
+    else {
 
+    }
     /* close connection */
     $connection->close();
-}
-else {
-    echo "No hay respuesta";
 }
