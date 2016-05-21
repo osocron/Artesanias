@@ -73,8 +73,6 @@
         </table>
     </div>
     <div id="buttons">
-        <button type="button">Eliminar</button>
-        <button type="button">Editar</button>
         <input type="submit" value="agregar">
     </div>
 </form>
