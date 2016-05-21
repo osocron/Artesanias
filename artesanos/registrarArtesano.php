@@ -1,8 +1,13 @@
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-    
-    $idArtesano = $_GET['codigo'];
+
+    $idArtesano = $_GET['id'];
+    $nombre = $_GET['nombre'];
+    $region = $_GET['region'];
+    $bio = $_GET['bio'];
+    $direccion = $_GET['direccion'];
+    $telefono = $_GET['telefono'];
 
     $connection = mysqli_connect("127.0.0.1", "artesanias", "artesanias", "artesanias");
 
@@ -13,24 +18,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         exit;
     }
 
-    $query = "SELECT * FROM artesano WHERE idArtesano={$idArtesano}";
+    $query = "INSERT INTO artesano VALUES('{$idArtesano}','{$nombre}','{$region}','{$direccion}','{$telefono}','{$bio}')";
 
-    if ($result = $connection->query($query)) {
-
-        /* fetch object array */
-        while ($row = $result->fetch_assoc()) {
-            echo $row["nombre"];
-            echo "\n";
-            echo $row["bio"];
-        }
-
-        /* free result set */
-        $result->free();
+    if ($connection->query($query) === TRUE) {
+        header("Location: artesanosPrincipal.php");
     }
+    else {
 
+    }
     /* close connection */
     $connection->close();
-}
-else {
-    echo "No hay respuesta";
 }
