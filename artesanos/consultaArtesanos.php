@@ -50,8 +50,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 			<input type="search" name="codigo"> <input class="btn btn-info" type="submit" value="Buscar">
 		    </form>
 	    </div>
+	    <div id="espacio-tabla">
+		<br>
+		<br>
+	    </div>
 	    <div id="table">
-		<table>
+		<table class="table table-hover">
 		    <tr>
 		        <th>ID</th>
 		        <th>NOMBRE</th>
@@ -78,15 +82,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 		    ?>
 		</table>
 	    </div>
-	    <div id="buttons">
-		<button type="button">Eliminar</button>
-		<button type="button">Editar</button>
-		<a href="agregar.php"><button type="button">Agregar</button></a>
-	    </div>
-	    <div id="footer">
-		Este es el footer
-	    </div>
-    </div>	
+
+	    	 <div id="sigue-el-footer">
+	<br><br><br>
+        </div>
+	<div class="panel-footer">Palacio de Gobierno. Av. Enríquez s/n. Col. Centro C.P. 91000, Xalapa, Veracruz, México.
+Tel. (228) 841-7400. Algunos derechos reservados © 2013</div>
+</div>	
+
     </body>
 
     </html>
