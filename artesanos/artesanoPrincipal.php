@@ -78,7 +78,7 @@
 	    </table>
 	</div>
 	<div id="siguen los botones">
-		<br><br><br>
+		<br>
 	</div>
 	<div class="row">
 		<div class="text-center">
