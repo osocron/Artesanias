@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     <div id="nav">
         <ul>
             <li><a href="#Artesanias">Artesanias</a></li>
-            <li><a href="artesanosPrincipal.php">Artesanos</a>
+            <li><a href="artesanoPrincipal.php">Artesanos</a>
                 <ul>
                     <li><a href="#ReporteArtesanos">ReporteArtesanos</a></li>
                 </ul>
