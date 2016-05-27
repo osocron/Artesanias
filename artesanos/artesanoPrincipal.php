@@ -25,7 +25,7 @@
 			<a class="dropdown-toggle" data-toggle="dropdown" href="artesanoPrincipal.php">Artesanos
 			<span class="caret"></span></a>
 			    <ul class="dropdown-menu">
-				<li><a href="artesanosPrincipal.php">Principal</a></li>
+				<li><a href="artesanoPrincipal.php">Principal</a></li>
 				<li><a href="#ReporteArtesanos">ReporteArtesanos</a></li>			
 			    </ul>
 			</li>
