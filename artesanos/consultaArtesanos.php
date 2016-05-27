@@ -23,6 +23,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         <link rel="stylesheet" href="../css/bootstrap.css">
     </head>
     <body>
+    <!--<script src="http://code.jquery.com/jquery-latest.min.js"></script>-->
+    <script src="../JQuery/jquery-1.12.4.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <div class="container">
 	   <div class="container-fluid">
 		<div class="row">
@@ -32,23 +35,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 	   	</div>
 	   </div>
 	   <div class="navbar navbar-inverse">
-		    <div class="container-fluid">
-			    <ul class="nav navbar-nav">
-				<li><a href="#Artesanias">Artesanias</a></li>
-				<li class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="artesanoPrincipal.php">Artesanos
-				<span class="caret"></span></a>
-				    <ul class="dropdown-menu">
-					<li><a href="#ReporteArtesanos">ReporteArtesanos</a></li>
-				    </ul>
-				</li>
+	       <div class="container-fluid">
+		    <ul class="nav navbar-nav">
+			<li><a href="#Artesanias">Artesanias</a></li>
+			<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="artesanoPrincipal.php">Artesanos
+			<span class="caret"></span></a>
+			    <ul class="dropdown-menu">
+				<li><a href="artesanosPrincipal.php">Principal</a></li>
+				<li><a href="#ReporteArtesanos">ReporteArtesanos</a></li>			
 			    </ul>
-		    </div>
-	    </div>
-	    <div class="text-right">
-		    <form action="consultaArtesanos.php" method="get">
-			<input type="search" name="codigo"> <input class="btn btn-info" type="submit" value="Buscar">
-		    </form>
+			</li>
+		    </ul>
+		    <form class="navbar-form navbar-right" role="search" action="consultaArtesanos.php" method="get">
+			    <div class="form-group">
+			    <input type="search" class="form-control"  placeholder="ID Artesano" name="codigo"> 
+			    </div>
+			    <button type="submit" class="btn btn-info">Buscar</button>
+	            </form>
+	       </div>
 	    </div>
 	    <div id="espacio-tabla">
 		<br>
