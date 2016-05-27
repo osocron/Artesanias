@@ -43,7 +43,7 @@
 	</div>
 	<div class="row">
 		<div class="text-left">
-		    <div class="col-sm-4"> <button class="btn btn-danger"type="button">Eliminar</button> </div>		    
+		    <div class="col-sm-4"> <a href="seleccionEliminar.php"><button class="btn btn-danger"type="button">Eliminar</button></a> </div>		    
 		    <div class="col-sm-4">
 		   
 		</div>
