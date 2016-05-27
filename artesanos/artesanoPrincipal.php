@@ -47,7 +47,7 @@
 		   
 		</div>
 		 <div class="text-right">
-		    <div class="col-sm-2"> <button class="btn btn-primary"type="button">Editar</button>
+		    <div class="col-sm-4"> <a href="seleccionEditar.php"><button class="btn btn-primary"type="button">Editar</button></a>
 		    <a href="agregar.php"><button class="btn btn-success"type="button">Agregar</button></a> </div>
 		 </div>
 	</div>
