@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
 </head>
 <body>
+<!--<script src="http://code.jquery.com/jquery-latest.min.js"></script>-->
+<script src="../JQuery/jquery-1.12.4.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 <div class ="container">
 	<div class="container-fluid">
 	   <div class="row">
@@ -44,8 +47,8 @@
 		   
 		</div>
 		 <div class="text-right">
-		    <div class="col-sm-2"> <button class="btn btn-primary"type="button">Editar</button> </div>
-		    <div class="col-sm-2"> <a href="agregar.php"><button class="btn btn-success"type="button">Agregar</button></a> </div>
+		    <div class="col-sm-2"> <button class="btn btn-primary"type="button">Editar</button>
+		    <a href="agregar.php"><button class="btn btn-success"type="button">Agregar</button></a> </div>
 		 </div>
 	</div>
 	<div id="espacio-tabla">
