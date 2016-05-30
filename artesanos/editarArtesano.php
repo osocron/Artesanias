@@ -71,11 +71,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                     while ($row = $result->fetch_assoc()) {
                         echo "<tr>";
                         echo "<td><input class=\"form-control input-sm\" type=\"hidden\" name=\"id\" value='{$idArtesano}'></td>";
-                        echo "<td><input type=\"text\" name=\"nombre\" value='{$row['nombre']}'></td>";
-                        echo "<td><input type=\"text\" name=\"region\" value='{$row['region']}'></td>";
-                        echo "<td><input type=\"text\" name=\"bio\" value='{$row['bio']}'></td>";
-                        echo "<td><input type=\"text\" name=\"direccion\" value='{$row['direccion']}'></td>";
-                        echo "<td><input type=\"text\" name=\"telefono\" value='{$row['telefono']}'></td>";
+                        echo "<td><input class=\"form-control input-sm\" type=\"text\" name=\"nombre\" value='{$row['nombre']}'></td>";
+                        echo "<td><input class=\"form-control input-sm\" type=\"text\" name=\"region\" value='{$row['region']}'></td>";
+                        echo "<td><input class=\"form-control input-sm\" type=\"text\" name=\"bio\" value='{$row['bio']}'></td>";
+                        echo "<td><input class=\"form-control input-sm\" type=\"text\" name=\"direccion\" value='{$row['direccion']}'></td>";
+                        echo "<td><input class=\"form-control input-sm\" type=\"text\" name=\"telefono\" value='{$row['telefono']}'></td>";
                         echo "</tr>";
                     }
                 }
