@@ -31,7 +31,7 @@
 		    </ul>
 		    <form class="navbar-form navbar-right" role="search" action="editarArtesano.php" method="get">
 			    <div class="form-group">
-			    <input type="search" name="id" class="form-control"  placeholder="ID Artesano" name="codigo"> 
+			    <input type="search" name="id" class="form-control"  placeholder="ID Artesano" name="id"> 
 			    </div>
 			    <input type="submit" value="Editar"class="btn btn-info">
 	            </form>

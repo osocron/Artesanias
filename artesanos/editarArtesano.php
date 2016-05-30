@@ -70,7 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                 if ($result = $connection->query($query)) {
                     while ($row = $result->fetch_assoc()) {
                         echo "<tr>";
-                        echo "<td><input class="form-control input-sm" type=\"hidden\" name=\"id\" value='{$idArtesano}'></td>";
+                        echo "<td><input class=\"form-control input-sm\" type=\"hidden\" name=\"id\" value='{$idArtesano}'></td>";
                         echo "<td><input type=\"text\" name=\"nombre\" value='{$row['nombre']}'></td>";
                         echo "<td><input type=\"text\" name=\"region\" value='{$row['region']}'></td>";
                         echo "<td><input type=\"text\" name=\"bio\" value='{$row['bio']}'></td>";
