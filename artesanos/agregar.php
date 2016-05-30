@@ -41,17 +41,7 @@
 	<div id="siguen los botones">
 		
 	</div>
-	<div class="row">
-		<div class="text-left">
-		    <div class="col-sm-4"> <a href="seleccionEliminar.php"><button class="btn btn-danger"type="button">Eliminar</button></a> </div>		    
-		    <div class="col-sm-4">
-		   
-		</div>
-		 <div class="text-right">
-		    <div class="col-sm-4"> <a href="seleccionEditar.php"><button class="btn btn-primary"type="button">Editar</button></a>
-		    <a href="agregar.php"><button class="btn btn-success"type="button">Agregar</button></a> </div>
-		 </div>
-	</div>
+
 	<div id="espacio-tabla">
 		<br>
 		<br>
@@ -106,9 +96,10 @@
             </tr>
         </table>
     </div>
-    <div id="buttons">
-        <input type="submit" value="agregar">
-    </div>
+ <div class="text-right">
+		    <!--<div class="col-sm-4"> <a href="seleccionEditar.php"><button class="btn btn-primary"type="button">Editar</button></a>-->
+		    <input class="btn btn-success"type="submit" value="Agregar">
+		 </div>
 </form>
 	 <div id="sigue-el-footer">
 	<br><br><br>
