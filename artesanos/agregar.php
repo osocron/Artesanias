@@ -45,18 +45,6 @@
 	</div>
 <form action="registrarArtesano.php" method="get">
     <div id="table">
-        <?php
-        $connection = mysqli_connect("127.0.0.1", "artesanias", "artesanias", "artesanias");
-
-        if (!$connection) {
-            echo "Error: Unable to connect to MySQL." . PHP_EOL;
-            echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
-            echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
-            exit;
-        }
-
-        $query = "SELECT * FROM artesano";
-        ?>
         <table class="table table-hover">
             <tr>
                 <th>ID</th>
@@ -66,22 +54,6 @@
                 <th>DIRECCIÓN</th>
                 <th>TELÉFONO</th>
             </tr>
-            <?php
-            if ($result = $connection->query($query)) {
-                while ($row = $result->fetch_assoc()) {
-                    echo "<tr>";
-                    echo "<td>" . $row['idArtesano'] . "</td>";
-                    echo "<td>" . $row['nombre'] . "</td>";
-                    echo "<td>" . $row['region'] . "</td>";
-                    echo "<td>" . $row['bio'] . "</td>";
-                    echo "<td>" . $row['direccion'] . "</td>";
-                    echo "<td>" . $row['telefono'] . "</td>";
-                    echo "</tr>";
-                }
-            }
-            $result->free();
-            $connection->close();
-            ?>
             <tr>
                 <td><input class="form-control input-sm" type="TEXT" name="id"></td>
                 <td><input class="form-control input-sm" type="text" name="nombre"></td>
