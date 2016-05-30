@@ -84,7 +84,7 @@
             ?>
             <tr>
                 <td><input class="form-control input-sm" type="TEXT" name="id"></td>
-                <td><input class="form-control input-sm" type="text" name="nombre"></td>
+                <td><input class="form-control input" type="text" name="nombre"></td>
                 <td><input type="text" name="region"></td>
                 <td><input type="text" name="bio"></td>
                 <td><input type="text" name="direccion"></td>
