@@ -1,29 +1,43 @@
 <html>
 <head>
-    <title>Página artesanos</title>
+    <title>Eliminar Artesanos</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/bootstrap.css">
 </head>
 <body>
-<div id="header">
-    Este es el header
-</div>
-<div id="nav">
-    <ul>
-        <li><a href="#Artesanias">Artesanias</a></li>
-        <li><a href="artesanoPrincipal.php">Artesanos</a>
-            <ul>
-                <li><a href="#ReporteArtesanos">ReporteArtesanos</a></li>
-            </ul>
-        </li>
-    </ul>
-</div>
-<div id="search">
-    <form action="eliminarArtesano.php" method="get">
-        <label>Escribe la ID del artesano a eliminar</label>
-        <input type="search" name="id"> <input type="submit" value="Eliminar">
-    </form>
-</div>
+<!--<script src="http://code.jquery.com/jquery-latest.min.js"></script>-->
+<script src="../JQuery/jquery-1.12.4.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<div class ="container">
+	<div class="container-fluid">
+	   <div class="row">
+		
+		<img src="../img/descarga.png" class="img-responsive">
+		
+	   </div>
+	</div>
+<div class="navbar navbar-inverse">
+	    <div class="container-fluid">
+		    <ul class="nav navbar-nav">
+			<li><a href="#Artesanias">Artesanias</a></li>
+			<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="artesanoPrincipal.php">Artesanos
+			<span class="caret"></span></a>
+			    <ul class="dropdown-menu">
+				<li><a href="artesanosPrincipal.php">Principal</a></li>
+				<li><a href="#ReporteArtesanos">ReporteArtesanos</a></li>			
+			    </ul>
+			</li>
+		    </ul>
+		    <form class="navbar-form navbar-right" role="search" action="eliminarArtesano.php" method="get">
+			    <div class="form-group">
+			    <input type="search" name="id" class="form-control"  placeholder="ID Artesano" name="id"> 
+			    </div>
+			    <input type="submit" value="Eliminar"class="btn btn-warning">
+	            </form>
+	    </div>
+	</div>
+
 <div id="table">
     <?php
     $connection = mysqli_connect("127.0.0.1", "artesanias", "artesanias", "artesanias");
@@ -37,7 +51,7 @@
 
     $query = "SELECT * FROM artesano";
     ?>
-    <table>
+    <table class="table table-hover">
         <tr>
             <th>ID</th>
             <th>NOMBRE</th>
@@ -64,10 +78,12 @@
         ?>
     </table>
 </div>
-<div id="footer">
-    Este es el footer
+<div id="sigue-el-footer">
+	<br><br><br>
+        </div>
+	<div class="panel-footer">Palacio de Gobierno. Av. Enríquez s/n. Col. Centro C.P. 91000, Xalapa, Veracruz, México.
+Tel. (228) 841-7400. Algunos derechos reservados © 2013</div>
 </div>
-
 </body>
 
 </html>
