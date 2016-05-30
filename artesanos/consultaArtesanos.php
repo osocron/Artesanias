@@ -4,7 +4,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
     $idArtesano = $_GET['codigo'];
 
-    $connection = mysqli_connect("127.0.0.1", "artesanias", "artesanias", "artesanias");
+	$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+	$server = $url["host"];
+	$username = $url["user"];
+	$password = $url["pass"];
+	$db = substr($url["path"], 1);
+
+	$connection = new mysqli($server, $username, $password, $db);
 
     if (!$connection) {
         echo "Error: Unable to connect to MySQL." . PHP_EOL;
